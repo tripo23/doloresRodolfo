@@ -21,7 +21,6 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .deck-eyebrow-dot{width:7px;height:7px;border-radius:50%;background:var(--coral);flex-shrink:0}
 .deck-title{font-size:1.9rem;font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:7px}
 .deck-sub{font-size:.86rem;color:var(--body);line-height:1.6;max-width:600px;margin-bottom:20px}
-/* cover */
 .cover-body{padding:72px 52px 48px;min-height:380px;display:flex;flex-direction:column;justify-content:space-between}
 .cover-top-row{display:flex;justify-content:space-between}
 .cover-eyebrow{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--meta);display:flex;align-items:center;gap:8px}
@@ -33,7 +32,6 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .cover-subtitle{font-size:.95rem;color:var(--body);font-weight:500;line-height:1.5;max-width:420px}
 .cover-bottom-row{border-top:1px solid var(--border);padding-top:18px;display:flex;justify-content:space-between}
 .cover-bottom-txt{font-family:var(--mono);font-size:.52rem;color:var(--meta);letter-spacing:.08em;text-transform:uppercase}
-/* tablero */
 .tablero-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-bottom:14px}
 .kpi-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px 11px}
 .kpi-label{font-family:var(--mono);font-size:.52rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);margin-bottom:5px}
@@ -43,7 +41,6 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .n-coral{color:var(--coral)}.n-amber{color:var(--amber)}
 .context-card{background:var(--bg2);border-radius:10px;padding:12px 16px;font-size:.76rem;color:var(--body);line-height:1.6}
 .context-card strong{font-weight:700;color:var(--ink)}
-/* tabla */
 .metod-intro{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:12px}
 .metod-intro-text{font-size:.86rem;font-weight:700;color:var(--ink);line-height:1.45}
 .metod-intro-text em{font-style:italic;color:var(--coral)}
@@ -58,11 +55,9 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .dot-red{background:var(--coral)}.dot-amb{background:var(--amber)}.dot-grn{background:var(--mint)}.dot-gry{background:var(--border2)}
 .ev-pill{display:inline-flex;font-family:var(--mono);font-size:.58rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap}
 .ev-alta{background:#FAEBEB;color:var(--coral)}.ev-med{background:#FFF8E6;color:var(--amber)}.ev-low{background:var(--bg2);color:var(--meta)}
-/* insight */
 .ins-header{display:grid;grid-template-columns:1fr auto;gap:14px;margin-bottom:12px;align-items:start}
 .ins-badge-text{font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;padding-top:6px}
-.ins-badge-text.alta{color:var(--coral)}
-.ins-badge-text.media{color:var(--amber)}
+.ins-badge-text.alta{color:var(--coral)}.ins-badge-text.media{color:var(--amber)}
 .vol-row{display:flex;gap:7px;margin-bottom:10px;flex-wrap:wrap}
 .vol-card{flex:1;min-width:90px;background:var(--card);border:1px solid var(--border);border-radius:9px;padding:9px 11px}
 .vol-num{font-size:1.1rem;font-weight:800;color:var(--coral);line-height:1}
@@ -80,7 +75,6 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .lectura-text{font-size:.77rem;color:var(--ink);line-height:1.55;font-weight:600}
 .sub-note{background:var(--bg2);border-radius:8px;padding:9px 13px;margin-top:8px;font-size:.72rem;color:var(--body);line-height:1.55;border-left:2px solid var(--border2)}
 .sub-note strong{font-weight:700;color:var(--ink)}
-/* ranking */
 .rank-list{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
 .rank-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 14px;display:grid;grid-template-columns:24px 1fr auto;gap:10px;align-items:start}
 .rank-num{font-size:1rem;font-weight:800;color:var(--coral)}
@@ -90,7 +84,6 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .krs-label{font-family:var(--mono);font-size:.52rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);margin-bottom:5px}
 .krs-row{font-size:.7rem;color:var(--body);line-height:1.65}
 .krs-row strong{color:var(--ink);font-weight:700}
-/* cierre */
 .cierre-grid{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
 .cierre-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:11px 16px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:start}
 .cierre-dolor{font-size:.78rem;font-weight:700;color:var(--ink);line-height:1.3}
@@ -121,18 +114,9 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 <!-- PORTADA -->
 <div class="deck-slide deck-active">
 <div class="cover-body">
-  <div class="cover-top-row">
-    <div class="cover-eyebrow"><div class="cover-eyebrow-dot"></div>Flow · CX + MC</div>
-    <div class="cover-right-meta">Junio 2026<br>Planning Q3</div>
-  </div>
-  <div class="cover-mid">
-    <div class="cover-title">Dolores de<br><em>Rodolfo</em></div>
-    <div class="cover-subtitle">Diagnóstico de experiencia previo a la planificación Q3 2026 — OKR 2</div>
-  </div>
-  <div class="cover-bottom-row">
-    <div class="cover-bottom-txt">CX + Mejora Continua</div>
-    <div class="cover-bottom-txt">Interno · Confidencial</div>
-  </div>
+  <div class="cover-top-row"><div class="cover-eyebrow"><div class="cover-eyebrow-dot"></div>Flow · CX + MC</div><div class="cover-right-meta">Junio 2026<br>Planning Q3</div></div>
+  <div class="cover-mid"><div class="cover-title">Dolores de<br><em>Rodolfo</em></div><div class="cover-subtitle">Diagnóstico de experiencia previo a la planificación Q3 2026 — OKR 2</div></div>
+  <div class="cover-bottom-row"><div class="cover-bottom-txt">CX + Mejora Continua</div><div class="cover-bottom-txt">Interno · Confidencial</div></div>
 </div>
 </div>
 
@@ -243,7 +227,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 <div class="deck-body">
   <div class="deck-eyebrow"><div class="deck-eyebrow-dot"></div>Prioridad Alta · Login / Acceso</div>
   <div class="ins-header">
-    <div><div class="deck-title" style="margin-bottom:4px">Fricciones de acceso<br>en dispositivos con login</div><div class="deck-sub" style="margin-bottom:0">INS-010 — El sistema solicita reautenticación frecuente sin motivo aparente. El flujo de OTP añade fricción extra cuando los mensajes llegan tarde o no llegan. Afecta app Android e iOS.</div></div>
+    <div><div class="deck-title" style="margin-bottom:4px">Fricciones de acceso<br>en dispositivos con login</div><div class="deck-sub" style="margin-bottom:0">INS-010 — El sistema solicita reautenticación frecuente sin motivo aparente. El flujo de OTP añade fricción extra cuando los mensajes llegan tarde o no llegan. Afecta app Android, iOS y STV.</div></div>
     <div class="ins-badge-text alta">Alta · INS-010</div>
   </div>
   <div class="vol-row">
@@ -336,7 +320,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
   <div class="cierre-grid">
     <div class="cierre-item"><div class="cierre-dolor">Deco Full IP con buena performance (INS-002)</div><div class="cierre-accion">El segmento con mayor stock de detractores (51%) recupera una experiencia de reproducción sin interrupciones ni demoras.</div><div class="cierre-kr">↓ 11% stock det. KR 2.1<br>↓ 2 fallas AF período<br>↓ 6% llamados deco IP</div></div>
     <div class="cierre-item"><div class="cierre-dolor">Smart TV estable y navegable (INS-001 + INS-015)</div><div class="cierre-accion">830K dispositivos con menos cierres inesperados y navegación entre canales más fluida. El segmento de mayor peso en KR 2.1 se estabiliza.</div><div class="cierre-kr">↓ 16% stock det. KR 2.1<br>↑ CES STV no Android<br>↓ AF OTTs en M11+</div></div>
-    <div class="cierre-item"><div class="cierre-dolor">Acceso fluido en dispositivos con login (INS-010)</div><div class="cierre-accion">150K intentos de login sin bloqueos. El 30% de llamados sin deco por login se reduce de forma estructural.</div><div class="cierre-kr">↓ 30% llamados sin deco<br>↑ CES login<br>↓ AF degradación login</div></div>
+    <div class="cierre-item"><div class="cierre-dolor">Acceso fluido en dispositivos con login (INS-010)</div><div class="cierre-accion">150K intentos de login sin bloqueos. El 30% de llamados sin deco por login se reduce de forma estructural.</div><div class="cierre-kr">↓ 30% llamados sin deco<br>↑ CES<br>↓ AF degradación login</div></div>
   </div>
   <div class="cierre-final"><div class="cierre-final-txt">Si el servicio funciona sin fricción, la percepción de valor aumenta.<br><em>Transformamos el sentimiento negativo en una plataforma confiable.</em></div></div>
 </div>
