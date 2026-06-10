@@ -4,8 +4,6 @@
 :root{--bg:#FAFAF7;--bg2:#F2F2ED;--card:#FFF;--border:#E4E4DE;--border2:#D0D0C9;--ink:#0D0D10;--body:#5A5A62;--meta:#95959E;--mint:#00A070;--coral:#D94848;--amber:#C07800;--sans:'Manrope',sans-serif;--mono:'JetBrains Mono',monospace}
 body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px 16px 48px}
 .deck-wrap{max-width:900px;margin:0 auto}
-
-/* NAV */
 .deck-nav{display:flex;justify-content:flex-end;align-items:center;gap:2px;margin-bottom:6px}
 .deck-nav-btn{font-family:var(--mono);font-size:.58rem;font-weight:600;width:24px;height:24px;border-radius:6px;border:1px solid var(--border2);background:var(--bg);color:var(--meta);cursor:pointer;display:flex;align-items:center;justify-content:center}
 .deck-nav-btn:hover{color:var(--ink);border-color:var(--ink)}
@@ -13,22 +11,17 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .deck-nav-arr{font-family:var(--mono);font-size:.62rem;width:24px;height:24px;border-radius:6px;border:1px solid var(--border2);background:var(--bg);color:var(--meta);cursor:pointer;display:flex;align-items:center;justify-content:center;margin-left:4px}
 .deck-nav-arr:hover{color:var(--ink);border-color:var(--ink)}
 .deck-nav-sep{width:1px;height:14px;background:var(--border2);margin:0 4px}
-
-/* SLIDE */
 .deck-slide{display:none;background:var(--bg);border:1px solid var(--border);border-radius:20px;overflow:hidden;animation:deck-fi .2s ease}
 .deck-slide.deck-active{display:block}
 @keyframes deck-fi{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
 .deck-body{padding:40px 52px}
 .deck-foot{border-top:1px solid var(--border);padding:12px 52px;display:flex;justify-content:space-between}
 .deck-foot-txt{font-family:var(--mono);font-size:.52rem;color:var(--meta);letter-spacing:.08em;text-transform:uppercase}
-
-/* EYEBROW */
 .deck-eyebrow{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--meta);display:flex;align-items:center;gap:8px;margin-bottom:16px}
 .deck-eyebrow-dot{width:7px;height:7px;border-radius:50%;background:var(--coral);flex-shrink:0}
 .deck-title{font-size:1.9rem;font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:7px}
 .deck-sub{font-size:.86rem;color:var(--body);line-height:1.6;max-width:600px;margin-bottom:20px}
-
-/* COVER */
+/* cover */
 .cover-body{padding:72px 52px 48px;min-height:380px;display:flex;flex-direction:column;justify-content:space-between}
 .cover-top-row{display:flex;justify-content:space-between}
 .cover-eyebrow{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--meta);display:flex;align-items:center;gap:8px}
@@ -40,8 +33,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .cover-subtitle{font-size:.95rem;color:var(--body);font-weight:500;line-height:1.5;max-width:420px}
 .cover-bottom-row{border-top:1px solid var(--border);padding-top:18px;display:flex;justify-content:space-between}
 .cover-bottom-txt{font-family:var(--mono);font-size:.52rem;color:var(--meta);letter-spacing:.08em;text-transform:uppercase}
-
-/* TABLERO */
+/* tablero */
 .tablero-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-bottom:14px}
 .kpi-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:13px 11px}
 .kpi-label{font-family:var(--mono);font-size:.52rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);margin-bottom:5px}
@@ -51,8 +43,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .n-coral{color:var(--coral)}.n-amber{color:var(--amber)}
 .context-card{background:var(--bg2);border-radius:10px;padding:12px 16px;font-size:.76rem;color:var(--body);line-height:1.6}
 .context-card strong{font-weight:700;color:var(--ink)}
-
-/* TABLA CONVERGENCIA */
+/* tabla */
 .metod-intro{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:12px}
 .metod-intro-text{font-size:.86rem;font-weight:700;color:var(--ink);line-height:1.45}
 .metod-intro-text em{font-style:italic;color:var(--coral)}
@@ -67,11 +58,11 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .dot-red{background:var(--coral)}.dot-amb{background:var(--amber)}.dot-grn{background:var(--mint)}.dot-gry{background:var(--border2)}
 .ev-pill{display:inline-flex;font-family:var(--mono);font-size:.58rem;font-weight:700;padding:2px 7px;border-radius:999px;white-space:nowrap}
 .ev-alta{background:#FAEBEB;color:var(--coral)}.ev-med{background:#FFF8E6;color:var(--amber)}.ev-low{background:var(--bg2);color:var(--meta)}
-
-/* INSIGHT SLIDES */
-.ins-header{display:grid;grid-template-columns:1fr auto;gap:14px;margin-bottom:12px}
-.ins-badge{font-family:var(--mono);font-size:.54rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:999px}
-.badge-alta{background:#FAEBEB;color:var(--coral)}.badge-med{background:#FFF8E6;color:var(--amber)}
+/* insight */
+.ins-header{display:grid;grid-template-columns:1fr auto;gap:14px;margin-bottom:12px;align-items:start}
+.ins-badge-text{font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;padding-top:6px}
+.ins-badge-text.alta{color:var(--coral)}
+.ins-badge-text.media{color:var(--amber)}
 .vol-row{display:flex;gap:7px;margin-bottom:10px;flex-wrap:wrap}
 .vol-card{flex:1;min-width:90px;background:var(--card);border:1px solid var(--border);border-radius:9px;padding:9px 11px}
 .vol-num{font-size:1.1rem;font-weight:800;color:var(--coral);line-height:1}
@@ -87,10 +78,9 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .lectura-box{border-radius:10px;padding:11px 14px;border-left:3px solid var(--coral)}
 .lectura-label{font-family:var(--mono);font-size:.52rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);margin-bottom:4px}
 .lectura-text{font-size:.77rem;color:var(--ink);line-height:1.55;font-weight:600}
-.sub-insight-note{background:var(--bg2);border-radius:8px;padding:9px 13px;margin-top:8px;font-size:.72rem;color:var(--body);line-height:1.55;border-left:2px solid var(--border2)}
-.sub-insight-note strong{font-weight:700;color:var(--ink)}
-
-/* RANKING */
+.sub-note{background:var(--bg2);border-radius:8px;padding:9px 13px;margin-top:8px;font-size:.72rem;color:var(--body);line-height:1.55;border-left:2px solid var(--border2)}
+.sub-note strong{font-weight:700;color:var(--ink)}
+/* ranking */
 .rank-list{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
 .rank-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:10px 14px;display:grid;grid-template-columns:24px 1fr auto;gap:10px;align-items:start}
 .rank-num{font-size:1rem;font-weight:800;color:var(--coral)}
@@ -100,8 +90,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
 .krs-label{font-family:var(--mono);font-size:.52rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--meta);margin-bottom:5px}
 .krs-row{font-size:.7rem;color:var(--body);line-height:1.65}
 .krs-row strong{color:var(--ink);font-weight:700}
-
-/* CIERRE */
+/* cierre */
 .cierre-grid{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
 .cierre-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:11px 16px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:start}
 .cierre-dolor{font-size:.78rem;font-weight:700;color:var(--ink);line-height:1.3}
@@ -182,7 +171,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
       <tr><td><div class="ins-code">INS-006</div><div class="ins-title">Acceso a TV en vivo en Deco Android</div></td><td><span class="sig-dot dot-amb"></span>36% det. Deco Android</td><td><span class="sig-dot dot-amb"></span>3% det. total</td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="sig-dot dot-amb"></span>70% motivos "aseso. app"</td><td><span class="sig-dot dot-amb"></span>3 fallas, 6h</td><td><span class="ev-pill ev-med">4/5</span></td></tr>
       <tr><td><div class="ins-code">INS-012</div><div class="ins-title">Activación del Pack Fútbol</div></td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="sig-dot dot-amb"></span>3% total / 5% transac.</td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="sig-dot dot-amb"></span>2% total llamados</td><td><span class="sig-dot dot-amb"></span>1 falla, 2h</td><td><span class="ev-pill ev-med">3/5</span></td></tr>
       <tr><td><div class="ins-code">INS-007</div><div class="ins-title">Búsqueda de contenido en la plataforma</div></td><td><span class="sig-dot dot-gry"></span>&lt;1%</td><td><span class="sig-dot dot-amb"></span>3% total / 5% mobile</td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="ev-pill ev-low">2/5</span></td></tr>
-      <tr><td><div class="ins-code">INS-008</div><div class="ins-title">Continuidad de sesión en la guía</div></td><td><span class="sig-dot dot-gry"></span>&lt;1%</td><td><span class="sig-dot dot-amb"></span>2% total / 4% pantallas</td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="sig-dot dot-amb"></span>Dentro "aseso. app"</td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="ev-pill ev-low">2/5</span></td></tr>
+      <tr><td><div class="ins-code">INS-008</div><div class="ins-title">Continuidad de sesión en la guía</div></td><td><span class="sig-dot dot-gry"></span>&lt;1%</td><td><span class="sig-dot dot-amb"></span>2% total / 4% pantallas grandes</td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="sig-dot dot-amb"></span>70% motivos "aseso. app"</td><td><span class="sig-dot dot-gry"></span>—</td><td><span class="ev-pill ev-low">2/5</span></td></tr>
     </tbody>
   </table>
 </div>
@@ -195,7 +184,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
   <div class="deck-eyebrow"><div class="deck-eyebrow-dot"></div>Prioridad Alta · Smart TV</div>
   <div class="ins-header">
     <div><div class="deck-title" style="margin-bottom:4px">Estabilidad y navegación<br>en Smart TV</div><div class="deck-sub" style="margin-bottom:0">INS-001: pantallas negras, congelamientos y cierres recurrentes en STV no Android (Samsung, LG, Noblex, Hisense). INS-015: el cambio de canal congela la app o es demasiado lento — afecta STV Android y no Android.</div></div>
-    <span class="ins-badge badge-alta">Alta · INS-001 + INS-015</span>
+    <div class="ins-badge-text alta">Alta · INS-001 + INS-015</div>
   </div>
   <div class="vol-row">
     <div class="vol-card"><div class="vol-num">830K</div><div class="vol-label">universo Smart TV</div></div>
@@ -215,7 +204,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
     <div class="lectura-label">Lectura</div>
     <div class="lectura-text">INS-001 es el mayor peso individual en KR 2.1. INS-015 extiende el problema al parque Android — ambos comparten el mismo universo de 830K dispositivos y el mismo dolor de fondo para el usuario.</div>
   </div>
-  <div class="sub-insight-note"><strong>Sub-insight INS-015 —</strong> En STV Android y no Android, el lanzamiento de la guía rápida modificó el comportamiento de los botones de navegación central (DPAD), que antes cambiaban de canal. Esto genera confusión en usuarios con el patrón anterior incorporado.</div>
+  <div class="sub-note"><strong>Sub-insight INS-015 —</strong> En STV Android y no Android, el lanzamiento de la guía rápida modificó el comportamiento de los botones de navegación central (DPAD), que antes cambiaban de canal. Esto genera confusión en usuarios con el patrón anterior incorporado.</div>
 </div>
 <div class="deck-foot"><div class="deck-foot-txt">Flow · CX + MC · Diagnóstico Q3</div><div class="deck-foot-txt">03 / 08</div></div>
 </div>
@@ -226,7 +215,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
   <div class="deck-eyebrow"><div class="deck-eyebrow-dot"></div>Prioridad Alta · Deco Full IP</div>
   <div class="ins-header">
     <div><div class="deck-title" style="margin-bottom:4px">Rendimiento de reproducción<br>en Deco Full IP</div><div class="deck-sub" style="margin-bottom:0">INS-002 — SAGEM M11: los usuarios abandonan antes del primer frame, los videos demoran en iniciar y los spinners se multiplican. El problema está en la performance técnica, no en la percepción.</div></div>
-    <span class="ins-badge badge-alta">Alta · INS-002</span>
+    <div class="ins-badge-text alta">Alta · INS-002</div>
   </div>
   <div class="vol-row">
     <div class="vol-card"><div class="vol-num">51%</div><div class="vol-label">stock detractores en el segmento</div></div>
@@ -255,7 +244,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
   <div class="deck-eyebrow"><div class="deck-eyebrow-dot"></div>Prioridad Alta · Login / Acceso</div>
   <div class="ins-header">
     <div><div class="deck-title" style="margin-bottom:4px">Fricciones de acceso<br>en dispositivos con login</div><div class="deck-sub" style="margin-bottom:0">INS-010 — El sistema solicita reautenticación frecuente sin motivo aparente. El flujo de OTP añade fricción extra cuando los mensajes llegan tarde o no llegan. Afecta app Android e iOS.</div></div>
-    <span class="ins-badge badge-alta">Alta · INS-010</span>
+    <div class="ins-badge-text alta">Alta · INS-010</div>
   </div>
   <div class="vol-row">
     <div class="vol-card"><div class="vol-num">~150K</div><div class="vol-label">universo intentos de login</div></div>
@@ -285,7 +274,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
   <div class="deck-eyebrow"><div class="deck-eyebrow-dot"></div>Prioridad Media · TV en vivo + Suscripciones</div>
   <div class="ins-header">
     <div><div class="deck-title" style="margin-bottom:4px">Momentos de alta intención<br>con experiencia por debajo de lo esperado</div><div class="deck-sub" style="margin-bottom:0">INS-006: llegar a la TV en vivo en Deco Android requiere más pasos de los que el usuario espera. INS-012: el Pack Fútbol confirma la compra pero falla en el momento de mayor demanda.</div></div>
-    <span class="ins-badge badge-med">Media · INS-006 + INS-012</span>
+    <div class="ins-badge-text media">Media · INS-006 + INS-012</div>
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:10px">
     <div>
@@ -323,7 +312,7 @@ body{background:var(--bg2);font-family:var(--sans);color:var(--ink);padding:24px
   <div class="deck-sub">Ordenados por cantidad de evidencias convergentes — no es una decisión de prioridad, es el resultado del cruce de datos.</div>
   <div class="rank-list">
     <div class="rank-item"><div class="rank-num">1</div><div><div class="rank-name">Rendimiento de reproducción en Deco Full IP (INS-002)</div><div class="rank-why">4/5 evidencias. 51% stock detractores en el segmento, 2 fallas AF, QoE con degradación medible. El problema técnico más documentado del período.</div></div><span class="ev-pill ev-alta">4 evidencias</span></div>
-    <div class="rank-item"><div class="rank-num">2</div><div><div class="rank-name">Estabilidad y navegación en Smart TV (INS-001 + INS-015)</div><div class="rank-why">INS-001 exclusivo STV no Android: mayor peso en KR 2.1 (16%). INS-015 extiende el problema al parque Android. 830K dispositivos en total — mismo universo, mismo dolor de fondo.</div></div><span class="ev-pill ev-alta">3 evidencias</span></div>
+    <div class="rank-item"><div class="rank-num">2</div><div><div class="rank-name">Estabilidad y navegación en Smart TV (INS-001 + INS-015)</div><div class="rank-why">INS-001 exclusivo STV no Android: mayor peso en KR 2.1 (16%). INS-015 extiende el problema al parque Android. 830K dispositivos — mismo universo, mismo dolor de fondo.</div></div><span class="ev-pill ev-alta">3 evidencias</span></div>
     <div class="rank-item"><div class="rank-num">3</div><div><div class="rank-name">Fricciones de acceso en dispositivos con login (INS-010)</div><div class="rank-why">3/5 evidencias. 30% de llamados sin deco. 150K intentos en el universo. Con mejoras de impacto rápido disponibles.</div></div><span class="ev-pill ev-alta">3 evidencias</span></div>
     <div class="rank-item"><div class="rank-num">4</div><div><div class="rank-name">Acceso a TV en vivo y Pack Fútbol — Expectativa vs. experiencia (INS-006 + INS-012)</div><div class="rank-why">4 evidencias combinadas en dos insights distintos. 36% detractores NPS en Deco Android. Falla en momentos de alta intención de uso.</div></div><span class="ev-pill ev-med">4 evidencias</span></div>
     <div class="rank-item" style="opacity:.58"><div class="rank-num" style="color:var(--meta)">—</div><div><div class="rank-name" style="color:var(--body)">Búsqueda de contenido y continuidad de guía (INS-007 + INS-008)</div><div class="rank-why">NPS menor al 1% en ambos. Sin QoE, fallas ni llamados directos. Requieren más datos antes de escalar en la agenda.</div></div><span class="ev-pill ev-low">2 evidencias</span></div>
